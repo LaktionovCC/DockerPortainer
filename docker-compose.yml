@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+  pritunl:
+    image: pritunl:latest
+    build: .
+    privileged: true
+    ports:
+      - 8012:80
+      - 4433:443
+      - 1194:1194/udp
+      - 1194:1194/tcp
+    volumes:
+      - pritunl_data:/var/lib/pritunl
+  db:
+    image: mongo:4.1.8-xenial
+    environment:
+      - MONGO_INITDB_DATABASE=pritunl
+    volumes:
+      - dbdata:/data/db
+
+volumes:
+  pritunl_data:
+  dbdata:
