@@ -13,7 +13,7 @@ apt-get update && apt-get upgrade -y
 apt-get install docker docker-compose git
 ```
 ```
-https://github.com/LaktionovCC/dockerportainer
+git clone https://github.com/LaktionovCC/dockerportainer
 ```
 
 ### Installing
