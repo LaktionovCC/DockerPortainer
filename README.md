@@ -13,7 +13,7 @@ apt-get update && apt-get upgrade -y
 apt-get install docker docker-compose git
 ```
 ```
-git clone https://github.com/LaktionovCC/dockerportainer
+git clone https://github.com/LaktionovCC/dockerpritunl
 ```
 
 ### Installing
@@ -22,7 +22,7 @@ A step by step series of examples that tell you how to get a development env run
 
 
 ```
-cd dockerportainer
+cd dockerpritunl
 ```
 ```
 docker-compose build
